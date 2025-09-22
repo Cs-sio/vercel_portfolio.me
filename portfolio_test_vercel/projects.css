@@ -1,0 +1,163 @@
+@keyframes glowBorder {
+    0% { box-shadow: 0 0 5px var(--glow-color); }
+    50% { box-shadow: 0 0 20px var(--glow-color); }
+    100% { box-shadow: 0 0 5px var(--glow-color); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card {
+    --glow-color: #00ff9d;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    animation: glowBorder 2s infinite;
+    border-color: var(--glow-color);
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+.status-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-badge.completed { background-color: #00ff9d; }
+.status-badge.in-progress { background-color: #ffd93d; }
+.status-badge.development { background-color: #ff6b6b; }
+.status-badge.maintenance { background-color: #4ecdc4; }
+
+.status-badge.in-progress {
+    background-color: #ffd93d;
+    color: #1a1a1a;
+}
+
+.status-badge.development {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.status-badge.maintenance {
+    background-color: #4ecdc4;
+    color: #1a1a1a;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    margin: 0.25rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.result-item:before {
+    content: "→";
+    color: var(--glow-color);
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border: 2px solid #00ff9d;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 42rem;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.close-button {
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: white;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.description-section,
+.technologies-section,
+.results-section {
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.results-list {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}

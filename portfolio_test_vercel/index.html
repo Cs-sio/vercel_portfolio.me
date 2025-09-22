@@ -1,0 +1,736 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portfolio - Chris Sewpersad</title>
+</head>
+<body>
+    <div class="background"></div>
+        <div class="parallax-bg"></div>
+    
+    <!-- Animation IT Background -->
+    <div class="it-background">
+        <canvas id="matrix-canvas"></canvas>
+        <div class="code-grid"></div>
+        
+        <!-- Lignes de code flottantes -->
+        <div class="floating-code">const security = { firewall: true, encryption: 'AES-256', monitoring: '24/7' };</div>
+        <div class="floating-code">function protectNetwork() { return 'Cybersecurity Expert'; }</div>
+        <div class="floating-code">if (threat.detected) { response.activate(); }</div>
+        <div class="floating-code">class NetworkAdmin { constructor() { this.skills = ['Linux', 'Python', 'Security']; } }</div>
+        <div class="floating-code">sudo systemctl start firewall && echo 'System Secured'</div>
+        
+        <!-- Particules technologiques -->
+        <div class="tech-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Circuits électroniques -->
+        <div class="circuit-lines">
+            <div class="circuit-line"></div>
+            <div class="circuit-line"></div>
+            <div class="circuit-line"></div>
+            <div class="circuit-line"></div>
+        </div>
+        
+        <!-- Hexagones technologiques -->
+        <div class="hex-grid">
+            <div class="hex"></div>
+            <div class="hex"></div>
+            <div class="hex"></div>
+            <div class="hex"></div>
+        </div>
+    </div>
+    
+    <!-- Navigation horizontale moderne -->
+    <nav class="navbar-horizontal">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" class="logo-link">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-cogs"></i>
+                    <span>Compétences</span>
+                </a></li>
+                <li><a href="#formation" class="nav-link" data-section="formation">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Formation</span>
+                </a></li>
+                <li><a href="#stages" class="nav-link" data-section="stages">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Stages</span>
+                </a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projets</span>
+                </a></li>
+                <li><a href="#veille" class="nav-link" data-section="veille">
+                    <i class="fas fa-eye"></i>
+                    <span>Veille</span>
+                </a></li>
+                <li><a href="#epreuves" class="nav-link" data-section="epreuves">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Epreuves</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="home" class="section active">
+            <div class="landing-content">
+                <div class="welcome-container">
+                    <h1 class="welcome-title">Bienvenue sur mon Portfolio</h1>
+                    <p class="welcome-subtitle">Étudiant en Cybersécurité & Réseaux</p>
+                    <div class="profile-section">
+                        <img src="https://wallpapercave.com/wp/wp13377675.png" alt="Portrait professionnel" class="profile-image">
+                        <div class="profile-info">
+                            <h2>Chris Sewpersad</h2>
+                            <p class="profile-bio">
+                                Passionné par la cybersécurité et la protection des données, 
+                                je suis actuellement en formation BTS SIO SISR. Mon objectif 
+                                est de devenir un professionnel de la sécurité informatique.
+                            </p>
+                            <div class="social-links">
+                                <a href="mailto:chris.sewpersad@email.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/chrissewpersad" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/chrissewpersad" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="explore-btn" id="explore-btn">
+                        <span>À propos de moi</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Mon parcours</h3>
+                        <p class="about-description">
+                            Passionné par la cybersécurité et la protection des données, je suis actuellement en formation BTS SIO SISR 
+                            (Services Informatiques aux Organisations - Solutions d'Infrastructure, Systèmes et Réseaux).
+                        </p>
+                        <p class="about-description">
+                            Mon objectif est de devenir un professionnel de la sécurité informatique, capable de protéger 
+                            les infrastructures critiques et de contribuer à un monde numérique plus sûr.
+                        </p>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Spécialisé en Cybersécurité</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Expert en Réseaux</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-code"></i>
+                                <span>Développement & Scripting</span>
+                            </div>
+                        </div>
+                        <a href="cv.pdf" class="download-cv" download>
+                            <i class="fas fa-download"></i> Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" style="--glow-color: #00ff9d;">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Cybersécurité</h4>
+                        <ul class="skills-list">
+                            <li>Firewalls et IDS/IPS</li>
+                            <li>Audit de sécurité</li>
+                            <li>Chiffrement et VPN</li>
+                            <li>Tests de pénétration</li>
+                            <li>Gestion des incidents</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card" style="--glow-color: #00ff9d;">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Administration Systèmes</h4>
+                        <ul class="skills-list">
+                            <li>Linux (Debian, Ubuntu, CentOS)</li>
+                            <li>Windows Server</li>
+                            <li>Virtualisation (VMware, VirtualBox)</li>
+                            <li>Conteneurs Docker</li>
+                            <li>Cloud Computing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card" style="--glow-color: #00ff9d;">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Réseaux</h4>
+                        <ul class="skills-list">
+                            <li>Architecture TCP/IP</li>
+                            <li>VLAN et routage</li>
+                            <li>WiFi et sécurité</li>
+                            <li>Monitoring réseau</li>
+                            <li>Gestion des accès</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card" style="--glow-color: #00ff9d;">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Développement</h4>
+                        <ul class="skills-list">
+                            <li>Python (automatisation, sécurité)</li>
+                            <li>Bash scripting</li>
+                            <li>PowerShell</li>
+                            <li>SQL et bases de données</li>
+                            <li>API REST</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bouton Fiche Compétences -->
+                <div class="skills-actions">
+                    <a href="docs/Epreuve E5 - Tableau de synthese.xlsx" class="skills-excel" download>
+                        <i class="fas fa-file-excel"></i>
+                        Télécharger la Fiche Compétences (Excel)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formation -->
+        <section id="formation" class="section">
+            <div class="container">
+                <h2 class="section-title">Formation & Certifications</h2>
+                <div class="formation-content">
+                    <div class="formation-card">
+                        <h3>BTS SIO SISR</h3>
+                        <p class="formation-period">2023 - 2025</p>
+                        <p class="formation-school">Lycée Technique</p>
+                        <p class="formation-description">
+                            Formation de niveau Bac+2 spécialisée dans les Solutions d'Infrastructure, 
+                            Systèmes et Réseaux.
+                        </p>
+                        <h4>Modules principaux :</h4>
+                        <ul>
+                            <li>Administration des systèmes et réseaux</li>
+                            <li>Sécurisation des infrastructures</li>
+                            <li>Virtualisation et cloud computing</li>
+                            <li>Gestion de projet informatique</li>
+                            <li>Communication et anglais technique</li>
+                        </ul>
+                    </div>
+                    <div class="formation-card">
+                        <h3>Certifications en cours</h3>
+                        <ul>
+                            <li><strong>CompTIA Security+</strong> - Cybersécurité</li>
+                            <li><strong>Linux Essentials</strong> - Administration Linux</li>
+                            <li><strong>CCNA</strong> - Réseaux Cisco</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Stages -->
+        <section id="stages" class="section">
+            <div class="container">
+                <h2 class="section-title">Stages & Expériences</h2>
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <h3>Stage 1ère année</h3>
+                        <p class="stage-period">Mai - Juin 2024</p>
+                        <p class="stage-company">Entreprise IT</p>
+                        <p class="stage-description">
+                            Découverte de l'environnement professionnel IT, participation aux 
+                            tâches d'administration système et support utilisateur.
+                        </p>
+                        <ul class="stage-tasks">
+                            <li>Support technique niveau 1</li>
+                            <li>Maintenance préventive</li>
+                            <li>Documentation technique</li>
+                        </ul>
+                    </div>
+                    <div class="stage-card">
+                        <h3>Stage 2ème année</h3>
+                        <p class="stage-period">Mai - Juin 2025</p>
+                        <p class="stage-company">Entreprise Cybersécurité</p>
+                        <p class="stage-description">
+                            Immersion dans le domaine de la cybersécurité, participation aux 
+                            audits de sécurité et mise en place de solutions de protection.
+                        </p>
+                        <ul class="stage-tasks">
+                            <li>Audit de sécurité</li>
+                            <li>Tests de pénétration</li>
+                            <li>Mise en place de firewalls</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projets Réalisés</h2>
+                <div class="projects-grid">
+                    <div class="project-card expandable-card">
+                        <h3>Projet Sécurité Réseau</h3>
+                        <p class="project-description">
+                            Mise en place d'une infrastructure sécurisée avec firewall, 
+                            IDS et monitoring des accès.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Firewall</span>
+                            <span class="tech-tag">Monitoring</span>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProjectDetails('project1')">
+                            <span>Voir plus</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="project-details" id="project1-details">
+                            <h4>Détails du projet :</h4>
+                            <ul class="project-details-list">
+                                <li>Topologie réseau sécurisée (segmentation VLAN)</li>
+                                <li>Règles firewall et journalisation</li>
+                                <li>Dashboard de monitoring</li>
+                                <li>Tests de pénétration et audit de sécurité</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="docs/projet-securite-reseau.pdf" class="project-pdf" download>
+                                    <i class="fas fa-file-pdf"></i> Télécharger le rapport (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card expandable-card">
+                        <h3>Infrastructure Cloud</h3>
+                        <p class="project-description">
+                            Déploiement d'une infrastructure cloud avec virtualisation 
+                            et conteneurisation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">VMware</span>
+                            <span class="tech-tag">Cloud</span>
+                        </div>
+                        <button class="expand-btn" onclick="toggleProjectDetails('project2')">
+                            <span>Voir plus</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="project-details" id="project2-details">
+                            <h4>Détails du projet :</h4>
+                            <ul class="project-details-list">
+                                <li>CI/CD basique pour déploiement de services</li>
+                                <li>Images Docker optimisées</li>
+                                <li>Documentation d'architecture</li>
+                                <li>Monitoring et logging centralisés</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="docs/infrastructure-cloud.pdf" class="project-pdf" download>
+                                    <i class="fas fa-file-pdf"></i> Télécharger la documentation (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Veille Technologique -->
+        <section id="veille" class="section">
+            <div class="container">
+                <h2 class="section-title">Veille Technologique</h2>
+                <p class="section-subtitle">Ma veille s'appuie sur des sources officielles comme l'ANSSI, ainsi que sur des créateurs de contenu spécialisés qui partagent des analyses, des tutoriels et des actualités en temps réel.</p>
+                
+                <!-- Domaine Cybersécurité -->
+                <div class="domain-section">
+                    <h3 class="domain-title">
+                        <i class="fas fa-shield-alt"></i>
+                        Cybersécurité
+                    </h3>
+                    <div class="creators-grid">
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/0day-ryan-montgomery.jpg" alt="0day - Ryan Montgomery" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">0day (Ryan Montgomery)</h4>
+                                    <p class="creator-role">Pentester & Militant Sécurité</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Pentester et militant pour la sécurité des mineurs en ligne. Il partage des analyses de failles critiques et des interventions sur des cas réels de cybercriminalité.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">Pentesting</span>
+                                <span class="expertise-tag">Sécurité Mineurs</span>
+                                <span class="expertise-tag">Analyse Failles</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('0day')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="0day-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Analyses de vulnérabilités 0-day</li>
+                                    <li>Interventions sur cybercriminalité</li>
+                                    <li>Protection des mineurs en ligne</li>
+                                    <li>Techniques de pentesting éthique</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                    <a href="#" class="creator-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/srhoe-kevin-roberts.jpg" alt="Srhoe - Kevin Roberts" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">Srhoe (Kevin Roberts)</h4>
+                                    <p class="creator-role">Créateur 0wlSec</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Créateur de la communauté 0wlSec, il vulgarise les techniques de hacking éthique et sensibilise à la cybersécurité auprès d'un large public.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">Hacking Éthique</span>
+                                <span class="expertise-tag">Vulgarisation</span>
+                                <span class="expertise-tag">Communauté</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('srhoe')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="srhoe-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Techniques de hacking éthique</li>
+                                    <li>Vulgarisation cybersécurité</li>
+                                    <li>Formation communautaire</li>
+                                    <li>Outils et méthodologies</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                    <a href="#" class="creator-link"><i class="fab fa-discord"></i> Discord</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/anda-pirate.jpg" alt="Andi Pirate" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">Andi Pirate</h4>
+                                    <p class="creator-role">Développeur & Créateur</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Développeur et créateur de contenu engagé, il propose une veille alternative sur les actualités cyber et les pratiques de piraterie éthique.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">Développement</span>
+                                <span class="expertise-tag">Veille Alternative</span>
+                                <span class="expertise-tag">Piraterie Éthique</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('andi')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="andi-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Actualités cybersécurité</li>
+                                    <li>Pratiques éthiques</li>
+                                    <li>Développement sécurisé</li>
+                                    <li>Analyse de menaces</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                    <a href="#" class="creator-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domaine Réseaux & Infrastructure -->
+                <div class="domain-section">
+                    <h3 class="domain-title">
+                        <i class="fas fa-network-wired"></i>
+                        Réseaux & Infrastructure
+                    </h3>
+                    <div class="creators-grid">
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/david-bombal.jpg" alt="David Bombal" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">David Bombal</h4>
+                                    <p class="creator-role">Formateur Réseau & Expert Cisco</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Formateur réseau reconnu, expert Cisco et Wireshark. Il propose des tutoriels pratiques et des démonstrations techniques sur les protocoles et outils réseau.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">Cisco</span>
+                                <span class="expertise-tag">Wireshark</span>
+                                <span class="expertise-tag">Formation</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('david')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="david-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Tutoriels Cisco CCNA/CCNP</li>
+                                    <li>Analyse réseau avec Wireshark</li>
+                                    <li>Démonstrations techniques</li>
+                                    <li>Formation certifiante</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                    <a href="#" class="creator-link"><i class="fas fa-globe"></i> Site Web</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/alexis-digital-byte.jpg" alt="Alexis - Digital Byte" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">Alexis (Digital Byte)</h4>
+                                    <p class="creator-role">Créateur TikTok IT</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Créateur TikTok spécialisé en IT, il vulgarise les concepts de cloud, réseau et cybersécurité avec pédagogie et humour.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">Cloud</span>
+                                <span class="expertise-tag">Vulgarisation</span>
+                                <span class="expertise-tag">TikTok</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('alexis')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="alexis-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Concepts cloud computing</li>
+                                    <li>Réseaux et infrastructure</li>
+                                    <li>Cybersécurité accessible</li>
+                                    <li>Contenu pédagogique</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-tiktok"></i> TikTok</a>
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creator-card enhanced-card">
+                            <div class="card-glow"></div>
+                            <div class="creator-header">
+                                <div class="avatar-container">
+                                    <img src="images/kevin-nanns.jpg" alt="Kevin Nanns - AdjacentNode" class="creator-avatar">
+                                    <div class="avatar-ring"></div>
+                                </div>
+                                <div class="creator-info">
+                                    <h4 class="creator-name">Kevin Nanns (AdjacentNode)</h4>
+                                    <p class="creator-role">Ingénieur Réseau</p>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                            </div>
+                            <p class="creator-description">
+                                Ingénieur réseau et créateur de contenu, il simplifie les notions complexes comme les VLAN, le Wi-Fi et les outils de diagnostic.
+                            </p>
+                            <div class="creator-expertise">
+                                <span class="expertise-tag">VLAN</span>
+                                <span class="expertise-tag">Wi-Fi</span>
+                                <span class="expertise-tag">Diagnostic</span>
+                            </div>
+                            <button class="details-btn enhanced-btn" onclick="toggleCreatorDetails('kevin')">
+                                <span>Détails</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="creator-details" id="kevin-details">
+                                <h5>Contenu spécialisé :</h5>
+                                <ul>
+                                    <li>Configuration VLAN</li>
+                                    <li>Optimisation Wi-Fi</li>
+                                    <li>Outils de diagnostic</li>
+                                    <li>Résolution de problèmes</li>
+                                </ul>
+                                <div class="creator-links">
+                                    <a href="#" class="creator-link"><i class="fab fa-youtube"></i> YouTube</a>
+                                    <a href="#" class="creator-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources Officielles -->
+                <div class="sources-section">
+                    <h3 class="domain-title">
+                        <i class="fas fa-certificate"></i>
+                        Sources Officielles
+                    </h3>
+                    <div class="sources-grid">
+                        <div class="source-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>ANSSI</h4>
+                            <p>Agence Nationale de la Sécurité des Systèmes d'Information</p>
+                        </div>
+                        <div class="source-card">
+                            <i class="fas fa-bug"></i>
+                            <h4>OWASP</h4>
+                            <p>Open Web Application Security Project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Epreuves -->
+        <section id="epreuves" class="section">
+            <div class="container">
+                <h2 class="section-title">Epreuves BTS SIO</h2>
+                <div class="epreuves-content">
+                    <div class="epreuve-category">
+                        <h3>Epreuves Professionnelles</h3>
+                        <ul>
+                            <li><strong>E1</strong> - Culture générale et expression</li>
+                            <li><strong>E2</strong> - Mathématiques</li>
+                            <li><strong>E3</strong> - Anglais</li>
+                            <li><strong>E4</strong> - Analyse économique, managériale et juridique</li>
+                            <li><strong>E5</strong> - Projet personnel et professionnel</li>
+                            <li><strong>E6</strong> - Support et mise à disposition de services informatiques</li>
+                        </ul>
+                    </div>
+                    <div class="epreuve-category">
+                        <h3>Epreuves Générales</h3>
+                        <ul>
+                            <li><strong>EG1</strong> - Culture générale et expression</li>
+                            <li><strong>EG2</strong> - Mathématiques</li>
+                            <li><strong>EG3</strong> - Anglais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>chris.sewpersad@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 6 XX XX XX XX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>France</span>
+                        </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="mailto:chris.sewpersad@email.com" class="contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            Envoyer un email
+                        </a>
+                        <a href="cv.pdf" class="contact-btn" download>
+                            <i class="fas fa-download"></i>
+                            Télécharger CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
