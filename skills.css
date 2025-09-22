@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skill-card {
+    --glow-color: #00ff9d;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out forwards;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    animation: glowBorder 2s infinite;
+    border-color: var(--glow-color);
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+@keyframes glowBorder {
+    0% { box-shadow: 0 0 5px var(--glow-color); }
+    50% { box-shadow: 0 0 20px var(--glow-color); }
+    100% { box-shadow: 0 0 5px var(--glow-color); }
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.mr-3 {
+    margin-right: 0.75rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #00ff9d;
+}
+
+@media (max-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.min-h-screen {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-\[\#1a1a1a\] {
+    background-color: #2a1b3d;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.skill-section {
+    margin-bottom: 1.5rem;
+}
+
+.skill-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Network Security Card */
+.network-card {
+    --glow-color: #00ff9d;
+    border-color: rgba(0, 255, 157, 0.1);
+}
+
+.network-icon {
+    color: #00ff9d;
+}
+
+/* Cybersecurity Card */
+.cybersecurity-card {
+    --glow-color: #ff3366;
+    border-color: rgba(255, 51, 102, 0.1);
+}
+
+.cybersecurity-icon {
+    color: #ff3366;
+}
+
+/* Systems Card */
+.systems-card {
+    --glow-color: #3366ff;
+    border-color: rgba(51, 102, 255, 0.1);
+}
+
+.systems-icon {
+    color: #3366ff;
+}
+
+/* Development Card */
+.development-card {
+    --glow-color: #ff9933;
+    border-color: rgba(255, 153, 51, 0.1);
+}
+
+.development-icon {
+    color: #ff9933;
+}
+
+/* Forensics Card */
+.forensics-card {
+    --glow-color: #9933ff;
+    border-color: rgba(153, 51, 255, 0.1);
+}
+
+.forensics-icon {
+    color: #9933ff;
+}
+
+/* Management Card */
+.management-card {
+    --glow-color: #33ff99;
+    border-color: rgba(51, 255, 153, 0.1);
+}
+
+.management-icon {
+    color: #33ff99;
+}
+
+/* Update the skill section headings to match their card colors */
+.network-card .skill-section h3,
+.cybersecurity-card .skill-section h3,
+.systems-card .skill-section h3,
+.development-card .skill-section h3,
+.forensics-card .skill-section h3,
+.management-card .skill-section h3 {
+    color: var(--glow-color);
+}
+
+/* Update the list arrows to match their card colors */
+.network-card li:before,
+.cybersecurity-card li:before,
+.systems-card li:before,
+.development-card li:before,
+.forensics-card li:before,
+.management-card li:before {
+    color: var(--glow-color);
+}
+
+.p-8 {
+    padding: 0;
+}
